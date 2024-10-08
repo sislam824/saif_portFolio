@@ -4,14 +4,16 @@ import ScrollReveal from "scrollreveal";
 
 export default function Github() {
   useEffect(() => {
+    // ScrollReveal animation for GitHub section
     const sr = ScrollReveal({
       distance: "30px",
       duration: 600,
       delay: 100,
       easing: "ease-out",
-      reset: true,
+      reset: false, // Animation happens only once
     });
 
+    // Reveal the main content
     sr.reveal(".gitcont", {
       origin: "bottom",
     });
