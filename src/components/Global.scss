@@ -681,7 +681,7 @@ html {
   width: 90%;
   margin: auto;
   text-align: center;
-  // padding: 60px 20px;
+  padding: 60px 20px;
   // background-color: #b43e3e;
 }
 
@@ -693,7 +693,7 @@ html {
 
 .all_projects {
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: space-between;
   // gap: 40px;
 }
