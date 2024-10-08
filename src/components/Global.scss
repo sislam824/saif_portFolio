@@ -322,6 +322,7 @@ html {
   padding: 30px;
   justify-content: space-between;
   gap: 20px;
+  // margin-bottom: 20px;
 
   img {
     height: 195px;
@@ -333,6 +334,7 @@ html {
   padding: 30px;
   border-radius: 16px;
   width: 50%;
+
   margin: auto;
 }
 
@@ -681,7 +683,7 @@ html {
   width: 90%;
   margin: auto;
   text-align: center;
-  // padding: 60px 20px;
+  padding: 60px 20px;
   // background-color: #b43e3e;
 }
 
@@ -694,21 +696,20 @@ html {
 .all_projects {
   display: flex;
   flex-wrap: wrap;
-
-  // justify-content: space-between;
+  justify-content: space-between; /* Space between the cards */
   gap: 40px;
 }
 
+/* Ensure two project cards per row */
 .project-card {
   background-image: linear-gradient(-45deg, rgb(5, 5, 168), skyblue);
   border-radius: 20px;
   padding: 25px;
-  max-width: 500px;
-  width: 100%;
+  max-width: 48%;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  opacity: 0; /* Start hidden */
-  transform: translateY(50px); /* For animation */
+  opacity: 0;
+  transform: translateY(50px);
 }
 
 .project-card:hover {
@@ -777,6 +778,7 @@ html {
 .slider-container {
   position: relative;
   margin-top: 20px;
+  overflow: hidden; /* Ensure no part of the next slide peeks out */
 }
 
 .keen-slider {
@@ -810,5 +812,5 @@ html {
 }
 
 .indicator-button.active {
-  background-color: #0077b6;
+  background-color: #030303;
 }
