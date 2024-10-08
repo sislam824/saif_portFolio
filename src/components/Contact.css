@@ -1,0 +1,111 @@
+.contact-container {
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 30px;
+  background-image: linear-gradient(-45deg, rgb(5, 5, 168), skyblue);
+  border-radius: 10px;
+}
+
+.contact-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.contact-header h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.contact-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.contact-info {
+  display: grid;
+  gap: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-form-container {
+  max-width: 500px;
+  flex: 1;
+}
+.contact-form-container h2 {
+  margin-bottom: 15px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+}
+
+textarea.form-input {
+  height: 100px;
+}
+
+.submit-button {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 30%;
+  margin: auto;
+  font-size: 18px;
+}
+
+.submit-button:hover {
+  box-shadow: 0 0 9px #7500fa;
+}
+
+.not-done {
+  color: red;
+}
+
+.done {
+  color: rgb(58, 234, 58);
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+  .contact-form-container h2 {
+  margin-top: 10px;
+}
+.submit-button {
+  background-color: black;
+  color: white;
+  padding: 10px 10px 10px 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 8px;
+  width: 30%;
+  margin: auto;
+  font-size: 18px;
+}
+
+}
+
